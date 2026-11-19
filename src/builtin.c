@@ -20,9 +20,11 @@ int run_builtin(char **args) {
     if (strcmp(args[0], "cd") == 0) {
         if (args[1] == NULL) {
             fprintf(stderr, "cd: expected argument\n");
+            return 0;
         } else {
             if (chdir(args[1]) != 0) {
                 perror("cd");
+                return 0;
             }
         }
         return 1;

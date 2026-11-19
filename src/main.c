@@ -55,7 +55,7 @@ void process_line(char *line) {
 
                 if (args[0] != NULL) { 
                     if (is_builtin(args)) {
-                        success = (run_builtin(args) == 0);
+                        success = (run_builtin(args) == 1);
                     } else {
                         success = (execute_command(args, 0) == 0);
                     }

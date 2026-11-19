@@ -3,7 +3,7 @@
 #include <unistd.h>
 
 void handle_sigint(int sig) {
-    write(STDOUT_FILENO, "\nsh> ", 7);
+    write(STDOUT_FILENO, "\nsh> ", 5);
     fflush(stdout);
 }
 
