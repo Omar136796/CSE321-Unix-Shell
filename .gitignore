@@ -1,0 +1,5 @@
+.DS_Store
+
+# Compiled shell binary and object files
+/sh
+*.o
