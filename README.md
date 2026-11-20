@@ -3,7 +3,7 @@
 A simple Unix shell written in C. It runs system commands and supports I/O
 redirection, pipelines of any length, command chaining with `;` and `&&`,
 command history, and Ctrl+C handling. Built with POSIX system calls: `fork`,
-`execvp`, `waitpid`, `pipe`, `dup2`, and `sigaction`.
+`execvp`, `waitpid`, `pipe`, `dup2` and `sigaction`.
 
 Made for CSE321 (Operating Systems) at BRAC University.
 
